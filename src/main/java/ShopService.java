@@ -1,5 +1,6 @@
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
@@ -10,6 +11,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 @Data
 @AllArgsConstructor
+@RequiredArgsConstructor
 public class ShopService {
     private ProductRepo productRepo = new ProductRepo();
     private OrderRepo orderRepo = new OrderMapRepo();
