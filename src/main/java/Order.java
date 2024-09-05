@@ -1,13 +1,19 @@
+import lombok.With;
+
+import java.time.ZonedDateTime;
 import java.util.List;
 
 public record Order(
         String id,
         List<Product> products,
-        OrderStatus status
+
+        @With
+        OrderStatus status,
+        ZonedDateTime orderTime
 ) {
 
-    public Order(String id,List<Product> products){
+    /*public Order(String id,List<Product> products){
         this(id,products,OrderStatus.PROCESSING);   // Standardstatus
 
-    }
+    }*/
 }
