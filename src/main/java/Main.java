@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public class Main {
     public static void main(String[] args){
-        OrderListRepo orderListRepo = new OrderListRepo(new ArrayList<>());
+        OrderListRepo orderListRepo = new OrderListRepo();
         ProductRepo productRepo = new ProductRepo();
 
         ShopService shopService = new ShopService(productRepo, orderListRepo);

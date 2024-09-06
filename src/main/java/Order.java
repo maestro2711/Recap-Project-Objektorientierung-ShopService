@@ -12,8 +12,11 @@ public record Order(
         ZonedDateTime orderTime
 ) {
 
-    /*public Order(String id,List<Product> products){
-        this(id,products,OrderStatus.PROCESSING);   // Standardstatus
-
-    }*/
+        public Order(String id, List<Product> products,
+                     OrderStatus status, ZonedDateTime orderTime) {
+                this.id = id;
+                this.products = products;
+                this.status = status;
+                this.orderTime = orderTime;
+        }
 }

@@ -4,8 +4,8 @@ import java.util.List;
 public class OrderListRepo implements OrderRepo{
     private List<Order> orders = new ArrayList<>();
 
-    public <Order> OrderListRepo(ArrayList<Order> es) {
-    }
+    //public <Order> OrderListRepo(ArrayList<Order> es) {
+
 
     public List<Order> getOrders() {
         return orders;
